@@ -8,7 +8,10 @@ class Queue:
         self.size = 0
 
     def peek(self):
-        return self.head.get_value()
+        if self.is_empty():
+            print("The queue is empty.")
+        else:
+            return self.head.get_value()
 
     def get_size(self):
         return self.size
