@@ -17,7 +17,7 @@ class Queue:
             else:
                 self.tail.set_next_node(item_to_add)
                 self.tail = item_to_add
-                self.size += 1
+            self.size += 1
         else:
             print("The queue is full.")
 
